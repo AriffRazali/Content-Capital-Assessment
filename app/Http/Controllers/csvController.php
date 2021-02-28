@@ -8,7 +8,7 @@ class csvController extends Controller
 {
 	public function exportCSV($id)
 	{
-        $path = storage_path() . "/app/public/evaluation-20190711.json";
+        $path = public_path() . "/database/evaluation-20190711.json";
 
         $userdata = json_decode(file_get_contents($path), true);
 
